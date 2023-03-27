@@ -1,0 +1,33 @@
+{
+   "env": {
+        "pause" : 2000,
+        "pause_1": 5000,
+        "pause_2": 3000,
+        "skyrizi_what_skyrizi_is_title": "How Skyrizi works",
+        "skyrizi_what_you_need_to_know_title": "Warnings and precautions",
+        "skyrizi_how_to_use_title": "How to use Skyrizi",
+        "skyrizi_possible_side_effects_title ": "Possible side effects",
+        "skyrizi_how_to_store_title": "How to store Skyrizi",
+        "skyrizi_contents_of_the_pack_title ": "What Skyrizi contains",
+        "skyrizi_instruction_for_use_title": "Please read all of this section before using Skyrizi",
+        "skyrizi_contact_us_title": "Contact us",
+        "experimentalStudio" : true
+
+   },
+   "reporter": "cypress-mochawesome-reporter",
+  "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "charts": true,
+    "reportPageTitle": "My Test Suite",
+    "embeddedScreenshots": true,
+    "inlineAssets": true
+  }
+        
+        
+       }
+
+
+
+
+
+

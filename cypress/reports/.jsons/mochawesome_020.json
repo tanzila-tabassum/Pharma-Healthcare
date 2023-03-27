@@ -1,0 +1,113 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-12-30T02:25:10.568Z",
+    "end": "2022-12-30T02:25:35.718Z",
+    "duration": 25150,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8721fb3f-6918-40f3-9aa1-8cda3f8d3591",
+      "title": "",
+      "fullFile": "cypress/integration/Main Project/Rinvoq/rinvoq_global.js",
+      "file": "cypress/integration/Main Project/Rinvoq/rinvoq_global.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8749c382-0170-4186-9dd0-aeca84ccde90",
+          "title": "Rinvoq user journey",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visits Rinvoq",
+              "fullTitle": "Rinvoq user journey Visits Rinvoq",
+              "timedOut": null,
+              "duration": 22977,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/Main Project/Rinvoq/rinvoq_global.js/Rinvoq user journey -- Visits Rinvoq (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "cy.visit('https://www.rinvoq.eu');\nCypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.viewport(1280, 800);\ncy.wait(pause_2);\ncy.get('.cookie-toolbar__close > span').click();\ncy.wait(pause_2);\ncy.reload();\ncy.wait(pause_2); //cy.get(':nth-child(3) > .btn').click()\ncy.get('#acceptCookieButton > .btn').click();\ncy.wait(pause_2);\ncy.get('.country-select__selector').click();\ncy.wait(pause_2);\ncy.get('[style=\"max-height: 418px;\"] > :nth-child(1) > :nth-child(1)').click();\ncy.wait(pause_2);\ncy.get('[style=\"max-height: 418px;\"]').scrollTo('bottom');\ncy.wait(pause_2);\ncy.get(':nth-child(28) > .cs-parent').click();\ncy.wait(pause_2);\ncy.get('.col-lg-5 > .button-link > .btn').click();\ncy.wait(pause_2);\ncy.get('.col-lg-7 > .button-link > .btn').click();\ncy.wait(pause_2);\ncy.get(':nth-child(3) > .image-container > .lightbox-link > .img-fluid').click();\ncy.wait(pause_2);\ncy.get('.lb-close').click();\ncy.wait(pause_2);\ncy.get(':nth-child(2) > .nav-link').click();\ncy.wait(pause_2);\ncy.get(':nth-child(3) > .nav-link').click();\ncy.wait(pause_2);\ncy.get(':nth-child(4) > .nav-link').click();\ncy.wait(pause_2);\ncy.get(':nth-child(5) > .nav-link').click();\ncy.wait(pause_2);\ncy.get(':nth-child(6) > .nav-link').click();\ncy.wait(pause_2);\ncy.get(':nth-child(7) > .nav-link').click();\ncy.wait(pause_2);\ncy.get('#download01').click(); //cy.screenshot()",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[style=\"max-height: 418px;\"] > :nth-child(1) > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[style=\"max-height: 418px;\"] > :nth-child(1) > :nth-child(1)`, but never found it.\n    at Context.eval (https://www.rinvoq.eu/__cypress/tests?p=cypress/integration/Main%2520Project/Rinvoq/rinvoq_global.js:119:8)",
+                "diff": null
+              },
+              "uuid": "903d0db8-0b2a-4c35-ad76-0cc920ac3961",
+              "parentUUID": "8749c382-0170-4186-9dd0-aeca84ccde90",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "903d0db8-0b2a-4c35-ad76-0cc920ac3961"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 22977,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
